@@ -1,0 +1,220 @@
+<?php
+$name = _POST['name'];
+$add = _POST['address'];
+$phone = _POST['phone'];
+$det = _POST['detail'];
+
+$to = 'zahidktk369@gmail.com';
+$subject = 'Order';
+$msg = "$name from $add sent you an order.\n" .
+"His contact number is $phone .\n" .
+"$det .\n";
+
+mail($to, $subject, $msg, 'From:' . $);
+
+echo "Thanks for submitting the form, Your has been sent successfully";
+
+?>
+
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.hero-image {
+  background-image: url("nan.jpg");
+	width: 100%;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+bttn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #001;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+}
+
+#foot {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+#rul{
+width:80%;
+broder:1px;
+background-color: grey;
+height:500px;
+align:center;
+}
+
+ul{
+list-style-position: outside;
+}
+
+li {
+    font-size: 20px;
+color:white;
+}
+
+p{
+	font-family: garamond;
+}
+
+h1{
+	font-family: garamond;
+}
+
+li{
+	font-family: garamond;
+}
+
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+textarea{
+  width: 50%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+</style>
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px"><p>KPlegends</p></h1>
+    <p style="font-size:20px;display: inline-block;background-color: #000;color:white;">We design,develop and maintain websites. </p>
+    
+  </div>
+</div>
+<div align="center">
+<h1>Fill below form</h1>
+</div>
+<form align="center" action="form.php" method="POST">
+
+<input type="text" name="name" placeholder="Your name"><br>
+<input type="text" name="address" placeholder="Address"><br>
+<input type="text" name="phone" placeholder="Contact number"><br>
+<textarea name="detail" rows="5" cols="20" placeholder="Write detail here"></textarea ><br>
+<input type="submit" name="submit"><br>
+</form>
+
+</form>
+</body>
+
+</html>
